@@ -1,0 +1,44 @@
+-- створення таблиці
+--
+-- create table Users
+-- (
+--     Name        varchar,
+--     Age         int,
+--     City        varchar,
+--     Country     varchar
+-- );
+--
+-- alter table "Users"
+--     add id serial;
+--
+-- create unique index users_id_uindex
+--     on "Users" (id);
+--
+-- alter table "Users"
+--     add constraint users_pk
+--         primary key (id);
+--
+--
+-- INSERT INTO "Users" ("Name", "Age",  "City", "Country")
+-- VALUES ('Oleg', '23', 'Khm', 'Ukraine');
+--
+-- INSERT INTO "Users" ("Name", "Age",  "City", "Country")
+-- VALUES ('Max', '26', 'Khm', 'Ukraine');
+--
+-- INSERT INTO "Users" ("Name", "Age",  "City", "Country")
+-- VALUES ('John', '35', 'London', 'UK');
+--
+-- INSERT INTO "Users" ("Name", "Age",  "City", "Country")
+-- VALUES ('Alfred', '27', 'Lviv', 'Ukraine');
+--
+-- INSERT INTO "Users" ("Name", "Age",  "City", "Country")
+-- VALUES ('Anton', '21', 'Poltava', 'Ukraine');
+--
+-- INSERT INTO "Users" ("Name", "Age",  "City", "Country")
+-- VALUES ('Igor', '45', 'Kyiv', 'Ukraine');
+--
+-- INSERT INTO "Users" ("Name", "Age",  "City", "Country")
+-- VALUES ('Oleg', '31', 'Kyiv', 'Ukraine');
+--
+-- Трохи людей в БД
+
