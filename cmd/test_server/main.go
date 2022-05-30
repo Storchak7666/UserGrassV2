@@ -8,7 +8,7 @@ import (
 	"runtime/debug"
 	"syscall"
 
-	"github.com/test_server/internal/domain/event"
+	"github.com/test_server/internal/domain/user"
 	"github.com/test_server/internal/infra/http"
 	"github.com/test_server/internal/infra/http/controllers"
 )
@@ -42,15 +42,15 @@ func main() {
 	}()
 
 	// Event
-	eventRepository := event.NewRepository()
-	eventService := event.NewService(&eventRepository)
-	eventController := controllers.NewEventController(&eventService)
+	userRepository := user.NewRepository()
+	userService := user.NewService(&userRepository)
+	userController := controllers.NewUserController(&userService)
 
 	// HTTP Server
 	err := http.Server(
 		ctx,
 		http.Router(
-			eventController,
+			userController,
 		),
 	)
 
